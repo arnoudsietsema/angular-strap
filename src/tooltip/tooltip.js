@@ -302,7 +302,7 @@ angular.module('mgcrea.ngStrap.tooltip', ['mgcrea.ngStrap.helpers.dimensions'])
         };
 
         $tooltip.$onKeyUp = function(evt) {
-          if (evt.which === 27 && $tooltip.$isShown) {
+          if (evt.which === 27) {
             $tooltip.hide();
             evt.stopPropagation();
           }
